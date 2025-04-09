@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4">Send Bulk Emails</h2>
+    <form method="POST" class="space-y-4">
+      <input name="sender_email" placeholder="Your Gmail Address" class="w-full border p-2 rounded" required>
+      <input name="sender_password" type="password" placeholder="App Password" class="w-full border p-2 rounded" required>
+      <textarea name="recipients" placeholder="Recipient Emails (comma separated)" class="w-full border p-2 rounded" rows="2" required></textarea>
+      <input name="subject" placeholder="Subject" class="w-full border p-2 rounded" required>
+      <textarea name="body" placeholder="Email Body" class="w-full border p-2 rounded" rows="5" required></textarea>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Send Emails</button>
+    </form>
+    <div class="mt-4">
+      <a href="/logout" class="text-red-500">Logout</a>
+    </div>
+  </div>
+</body>
+</html>
