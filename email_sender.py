@@ -7,7 +7,7 @@ def send_bulk_emails(sender_email, sender_password, recipients, subject, body):
         msg['Subject'] = subject
         msg['From'] = sender_email
         msg['To'] = email
-        personalized_body = f"Hi {name},\n\n{body}\n\nRegards,\nYour Name"
+        personalized_body = f"Hey {name},\n\n{body}\n\nRegards,\Nishant Mehta"
         msg.set_content(personalized_body)
 
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
